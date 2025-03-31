@@ -1,0 +1,143 @@
+<%@ NApiVersion="2.x" %>
+<html>
+<head>
+    <title>TechSolutions Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+<header class="hero">
+    <h1>TechSolutions Pro</h1>
+    <p>Digital Transformation Specialists</p>
+</header>
+
+<main class="container">
+    <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>ERP Implementation</h3>
+                <p>End-to-end enterprise resource planning solutions</p>
+            </div>
+            <div class="card">
+                <h3>Cloud Migration</h3>
+                <p>Seamless transition to cloud infrastructure</p>
+            </div>
+            <div class="card">
+                <h3>NetSuite Support</h3>
+                <p>24/7 expert support and maintenance</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <h2>Our Products</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Enterprise ERP Suite</h3>
+                <p>Customizable enterprise management solutions</p>
+            </div>
+            <div class="card">
+                <h3>Cloud Solutions</h3>
+                <p>Scalable cloud infrastructure packages</p>
+            </div>
+            <div class="card">
+                <h3>Custom Software</h3>
+                <p>Tailored business applications</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+    <form hx-post="/email" hx-target="#service-response" id="email-form">
+        <fieldset>
+            <legend>Mandatory fields</legend>
+            <p>
+                <label for="recipients"><b>Email</b></label>
+                <input type="email" placeholder="recipient1@example.com, recipient2@example.com,..." name="recipients" size="50" required>
+            </p>
+            <p>
+                <label for="subject"><b>Subject</b></label>
+                <input type="text" placeholder="Subject..." name="subject" size="50" required>
+            </p>
+            <p class="formfield">
+                <label for="body"><b>Body</b></label>
+                <textarea placeholder="Email body..." name="body" rows="10" cols="70"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Optional fields</legend>
+            <p>
+                <label for="cc"><b>Cc</b></label>
+                <input type="cc" placeholder="cc1@example.com, cc2@example.com,..." name="cc" size="50">
+            </p>
+            <p>
+                <label for="bcc"><b>Bcc</b></label>
+                <input type="bcc" placeholder="bcc1@example.com, bcc2@example.com,..." name="bcc" size="50">
+            </p>
+        </fieldset>
+            <p>
+                <input type="submit" id="send-email-button" value="Send Email">
+                <input type="submit" id="send-email-in-bulk-button" value="Send Email In Bulk">
+            </p>
+    </form>
+    <div id="service-response" hidden>
+    </div>
+</div>
+
+    </section>
+</main>
+
+<section class="about-section">
+    <h2>About Us</h2>
+    <div class="about-content">
+        <p>We are a full-service technology consultancy focused on delivering innovative solutions for modern businesses. Our team of experts specializes in:</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Digital Strategy</h3>
+                <p>Comprehensive planning for technology adoption</p>
+            </div>
+            <div class="card">
+                <h3>Cloud Solutions</h3>
+                <p>Secure and scalable infrastructure deployment</p>
+            </div>
+            <div class="card">
+                <h3>System Integration</h3>
+                <p>Seamless connection of enterprise systems</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials-section">
+    <h2>Client Testimonials</h2>
+    <div class="grid">
+        <div class="card">
+            <blockquote>
+                "Outstanding service and technical expertise. They transformed our legacy systems completely."
+            </blockquote>
+            <cite>- Acme Corp</cite>
+        </div>
+        <div class="card">
+            <blockquote>
+                "The cloud migration was executed flawlessly with zero downtime."
+            </blockquote>
+            <cite>- Globex Industries</cite>
+        </div>
+        <div class="card">
+            <blockquote>
+                "Their support team is responsive and knowledgeable."
+            </blockquote>
+            <cite>- Stark Enterprises</cite>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2025 TechSolutions Pro. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

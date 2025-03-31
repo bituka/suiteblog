@@ -1,0 +1,103 @@
+:root {
+    --primary: #2a2a2a;
+    --secondary: #1a1a1a;
+    --accent: #007bff;
+    --text: #ffffff;
+    --muted: #888888;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--secondary);
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 2rem 0;
+}
+
+.card {
+    background-color: var(--secondary);
+    padding: 2rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--accent);
+    margin-top: 0;
+}
+
+.contact-section {
+    padding: 2rem;
+    background-color: var(--secondary);
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+input, textarea {
+    background-color: var(--primary);
+    border: 1px solid var(--muted);
+    color: var(--text);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--accent);
+}
+
+input[type="submit"] {
+    background-color: var(--accent);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--secondary);
+    margin-top: 4rem;
+}
+
+#service-response {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    background-color: var(--primary);
+}
