@@ -46,7 +46,7 @@ const Hero = () => {
   return h('section', { 
     class: 'hero',
     style: {
-      backgroundImage: 'url("https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80")'
+      backgroundImage: 'url("/api/placeholder/1600/900")'
     }
   }, [
     h('div', { class: 'hero-content' }, [
@@ -72,17 +72,17 @@ const FeaturesSection = () => {
     {
       title: "Premium Content Management",
       content: "Create and manage your content with our intuitive, powerful editor",
-      imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+      imageUrl: "/api/placeholder/400/200"
     },
     {
       title: "Enterprise Solutions",
       content: "Scalable infrastructure for businesses of all sizes",
-      imageUrl: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+      imageUrl: "/api/placeholder/400/200"
     },
     {
       title: "Advanced Analytics",
       content: "Gain insights into your audience with comprehensive analytics",
-      imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+      imageUrl: "/api/placeholder/400/200"
     }
   ];
 
@@ -99,17 +99,17 @@ const AboutSection = () => {
     {
       title: "Our Platform",
       content: "Cloud-native publishing platform with global edge networks for lightning-fast delivery",
-      imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+      imageUrl: "/api/placeholder/400/200"
     },
     {
       title: "Our Team",
       content: "Industry experts passionate about creating the best publishing experience",
-      imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+      imageUrl: "/api/placeholder/400/200"
     },
     {
       title: "Our Values",
       content: "Innovation, quality, and client satisfaction drive everything we do",
-      imageUrl: "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80"
+      imageUrl: "/api/placeholder/400/200"
     }
   ];
 
