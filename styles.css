@@ -1,103 +1,52 @@
 :root {
-    --primary: #2a2a2a;
-    --secondary: #1a1a1a;
-    --accent: #007bff;
-    --text: #ffffff;
-    --muted: #888888;
+  --primary: #2c3e50;
+  --secondary: #3498db;
+  --light: #ecf0f1;
 }
 
 body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: var(--primary);
-    color: var(--text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background: var(--light);
 }
 
 .hero {
-    text-align: center;
-    padding: 4rem 2rem;
-    background-color: var(--secondary);
-    margin-bottom: 2rem;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--primary);
+  color: white;
+  margin-bottom: 2rem;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
+.hero h1 {
+  font-size: 3rem;
+  margin: 0 0 1rem;
 }
 
-.grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 2rem 0;
+.business-section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.card {
-    background-color: var(--secondary);
-    padding: 2rem;
-    border-radius: 8px;
-    transition: transform 0.2s;
+.business-section h2 {
+  color: var(--secondary);
+  margin-top: 0;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.content {
+  color: var(--primary);
 }
 
-.card h3 {
-    color: var(--accent);
-    margin-top: 0;
-}
-
-.contact-section {
-    padding: 2rem;
-    background-color: var(--secondary);
-    border-radius: 8px;
-    margin: 2rem 0;
-}
-
-form {
-    display: grid;
-    gap: 1rem;
-}
-
-input, textarea {
-    background-color: var(--primary);
-    border: 1px solid var(--muted);
-    color: var(--text);
-    padding: 0.5rem;
-    border-radius: 4px;
-}
-
-input:focus, textarea:focus {
-    outline: 2px solid var(--accent);
-}
-
-input[type="submit"] {
-    background-color: var(--accent);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    cursor: pointer;
-    transition: opacity 0.2s;
-}
-
-input[type="submit"]:hover {
-    opacity: 0.9;
-}
-
-.footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: var(--secondary);
-    margin-top: 4rem;
-}
-
-#service-response {
-    padding: 1rem;
-    margin-top: 1rem;
-    border-radius: 4px;
-    background-color: var(--primary);
+.site-footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  color: var(--primary);
+  border-top: 1px solid #ddd;
 }
