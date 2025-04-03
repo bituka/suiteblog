@@ -1,6 +1,6 @@
 # SuiteBlog Starter Template
 
-A lightweight SSP (Server-Side Preprocessed) application template using modern web technologies.
+A lightweight SSP (SuiteScript Server Page) application template using modern web technologies.
 
 ## Features
 - Preact for efficient UI components
