@@ -13,7 +13,7 @@ A lightweight SSP (Server-Side Preprocessed) application template using modern w
 - **Preact** (Lightweight React alternative)
 - **HTML5** semantic markup
 - **CSS3** (Flexbox, Grid, CSS Variables)
-- **SSP** (Server-Side Preprocessing)
+- **SSP** (SuiteScript Server Page)
 
 ## Getting Started
 
@@ -21,14 +21,9 @@ A lightweight SSP (Server-Side Preprocessed) application template using modern w
 ```bash
 git clone https://github.com/bituka/suiteblog.git
 ```
-2. Install dependencies:
-```bash
-npm install preact ssp-framework
-```
-3. Start dev server:
-```bash
-npm run dev
-```
+2. Copy files to your NetSuite Account.
+
+3. Deploy to your existing domain.
 
 ## Project Structure
 ```
